@@ -18,6 +18,9 @@ class MainViewController: UIViewController {
     }
     
     private func setupUI() {
+        title = "Repositories"
+        view.backgroundColor = .white
+        
         setupSearchController()
     }
     

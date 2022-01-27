@@ -7,20 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		755BDAC7B92C0CE22BFFEBEC /* Pods_Github_Respository_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A78D3192C480D5760FC3C27 /* Pods_Github_Respository_App.framework */; };
 		AF59B01227A2FD5400890BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF59B01127A2FD5400890BD9 /* AppDelegate.swift */; };
 		AF59B01427A2FD5400890BD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF59B01327A2FD5400890BD9 /* SceneDelegate.swift */; };
 		AF59B01627A2FD5400890BD9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF59B01527A2FD5400890BD9 /* MainViewController.swift */; };
 		AF59B01B27A2FD5600890BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF59B01A27A2FD5600890BD9 /* Assets.xcassets */; };
 		AF59B01E27A2FD5600890BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF59B01C27A2FD5600890BD9 /* LaunchScreen.storyboard */; };
+		AFA0400827A31AC70004E33A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AFA0400727A31AC70004E33A /* Alamofire */; };
 		AFC42C8B27A3014B00A3B98E /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC42C8A27A3014B00A3B98E /* SearchResultsViewController.swift */; };
 		AFC42C8E27A305F300A3B98E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC42C8D27A305F300A3B98E /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A78D3192C480D5760FC3C27 /* Pods_Github_Respository_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Github_Respository_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7241ACE611A0D951D2C6E267 /* Pods-Github Respository App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Github Respository App.debug.xcconfig"; path = "Target Support Files/Pods-Github Respository App/Pods-Github Respository App.debug.xcconfig"; sourceTree = "<group>"; };
-		7D4FA8D79E432663336DDF57 /* Pods-Github Respository App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Github Respository App.release.xcconfig"; path = "Target Support Files/Pods-Github Respository App/Pods-Github Respository App.release.xcconfig"; sourceTree = "<group>"; };
 		AF59B00E27A2FD5400890BD9 /* Github Respository App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Respository App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF59B01127A2FD5400890BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF59B01327A2FD5400890BD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,37 +34,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755BDAC7B92C0CE22BFFEBEC /* Pods_Github_Respository_App.framework in Frameworks */,
+				AFA0400827A31AC70004E33A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		99CC37A671CFC45C09F29616 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2A78D3192C480D5760FC3C27 /* Pods_Github_Respository_App.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AB3C20CC5E67F8501011E774 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7241ACE611A0D951D2C6E267 /* Pods-Github Respository App.debug.xcconfig */,
-				7D4FA8D79E432663336DDF57 /* Pods-Github Respository App.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		AF59B00527A2FD5300890BD9 = {
 			isa = PBXGroup;
 			children = (
 				AF59B01027A2FD5400890BD9 /* Github Respository App */,
 				AF59B00F27A2FD5400890BD9 /* Products */,
-				AB3C20CC5E67F8501011E774 /* Pods */,
-				99CC37A671CFC45C09F29616 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,7 +143,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF59B02227A2FD5600890BD9 /* Build configuration list for PBXNativeTarget "Github Respository App" */;
 			buildPhases = (
-				E29F43455A1D993B18D2408C /* [CP] Check Pods Manifest.lock */,
 				AF59B00A27A2FD5400890BD9 /* Sources */,
 				AF59B00B27A2FD5400890BD9 /* Frameworks */,
 				AF59B00C27A2FD5400890BD9 /* Resources */,
@@ -175,6 +152,9 @@
 			dependencies = (
 			);
 			name = "Github Respository App";
+			packageProductDependencies = (
+				AFA0400727A31AC70004E33A /* Alamofire */,
+			);
 			productName = "Github Respository App";
 			productReference = AF59B00E27A2FD5400890BD9 /* Github Respository App.app */;
 			productType = "com.apple.product-type.application";
@@ -203,6 +183,9 @@
 				Base,
 			);
 			mainGroup = AF59B00527A2FD5300890BD9;
+			packageReferences = (
+				AFA0400627A31AC70004E33A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = AF59B00F27A2FD5400890BD9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,31 +206,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E29F43455A1D993B18D2408C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Github Respository App-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF59B00A27A2FD5400890BD9 /* Sources */ = {
@@ -394,14 +352,14 @@
 		};
 		AF59B02327A2FD5600890BD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7241ACE611A0D951D2C6E267 /* Pods-Github Respository App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RQ63Y5MYM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Github Respository App/Info.plist";
+				INFOPLIST_FILE = "Github Respository App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -423,14 +381,14 @@
 		};
 		AF59B02427A2FD5600890BD9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7D4FA8D79E432663336DDF57 /* Pods-Github Respository App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7RQ63Y5MYM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Github Respository App/Info.plist";
+				INFOPLIST_FILE = "Github Respository App/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -472,6 +430,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFA0400627A31AC70004E33A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFA0400727A31AC70004E33A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA0400627A31AC70004E33A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF59B00627A2FD5300890BD9 /* Project object */;
 }
