@@ -12,7 +12,11 @@
 		AF59B01627A2FD5400890BD9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF59B01527A2FD5400890BD9 /* MainViewController.swift */; };
 		AF59B01B27A2FD5600890BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF59B01A27A2FD5600890BD9 /* Assets.xcassets */; };
 		AF59B01E27A2FD5600890BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF59B01C27A2FD5600890BD9 /* LaunchScreen.storyboard */; };
-		AFA0400827A31AC70004E33A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AFA0400727A31AC70004E33A /* Alamofire */; };
+		AFA2FEEC27A31CFC000FCB7B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FEEB27A31CFC000FCB7B /* NetworkClient.swift */; };
+		AFA2FEEF27A3201E000FCB7B /* TRON in Frameworks */ = {isa = PBXBuildFile; productRef = AFA2FEEE27A3201E000FCB7B /* TRON */; };
+		AFA2FEF127A3201E000FCB7B /* TRONSwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = AFA2FEF027A3201E000FCB7B /* TRONSwiftyJSON */; };
+		AFA2FEF427A3207A000FCB7B /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = AFA2FEF327A3207A000FCB7B /* PromiseKit */; };
+		AFA2FEF727A320AB000FCB7B /* PureLayout in Frameworks */ = {isa = PBXBuildFile; productRef = AFA2FEF627A320AB000FCB7B /* PureLayout */; };
 		AFC42C8B27A3014B00A3B98E /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC42C8A27A3014B00A3B98E /* SearchResultsViewController.swift */; };
 		AFC42C8E27A305F300A3B98E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC42C8D27A305F300A3B98E /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +29,7 @@
 		AF59B01A27A2FD5600890BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF59B01D27A2FD5600890BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF59B01F27A2FD5600890BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFA2FEEB27A31CFC000FCB7B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		AFC42C8A27A3014B00A3B98E /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		AFC42C8D27A305F300A3B98E /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,7 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFA0400827A31AC70004E33A /* Alamofire in Frameworks */,
+				AFA2FEF727A320AB000FCB7B /* PureLayout in Frameworks */,
+				AFA2FEEF27A3201E000FCB7B /* TRON in Frameworks */,
+				AFA2FEF427A3207A000FCB7B /* PromiseKit in Frameworks */,
+				AFA2FEF127A3201E000FCB7B /* TRONSwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +115,7 @@
 		AFC42C8727A3008E00A3B98E /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				AFA2FEEB27A31CFC000FCB7B /* NetworkClient.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -153,7 +162,10 @@
 			);
 			name = "Github Respository App";
 			packageProductDependencies = (
-				AFA0400727A31AC70004E33A /* Alamofire */,
+				AFA2FEEE27A3201E000FCB7B /* TRON */,
+				AFA2FEF027A3201E000FCB7B /* TRONSwiftyJSON */,
+				AFA2FEF327A3207A000FCB7B /* PromiseKit */,
+				AFA2FEF627A320AB000FCB7B /* PureLayout */,
 			);
 			productName = "Github Respository App";
 			productReference = AF59B00E27A2FD5400890BD9 /* Github Respository App.app */;
@@ -184,7 +196,9 @@
 			);
 			mainGroup = AF59B00527A2FD5300890BD9;
 			packageReferences = (
-				AFA0400627A31AC70004E33A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AFA2FEED27A3201E000FCB7B /* XCRemoteSwiftPackageReference "TRON" */,
+				AFA2FEF227A3207A000FCB7B /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				AFA2FEF527A320AB000FCB7B /* XCRemoteSwiftPackageReference "PureLayout" */,
 			);
 			productRefGroup = AF59B00F27A2FD5400890BD9 /* Products */;
 			projectDirPath = "";
@@ -217,6 +231,7 @@
 				AF59B01227A2FD5400890BD9 /* AppDelegate.swift in Sources */,
 				AFC42C8E27A305F300A3B98E /* CustomNavigationController.swift in Sources */,
 				AF59B01427A2FD5400890BD9 /* SceneDelegate.swift in Sources */,
+				AFA2FEEC27A31CFC000FCB7B /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,21 +447,52 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AFA0400627A31AC70004E33A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		AFA2FEED27A3201E000FCB7B /* XCRemoteSwiftPackageReference "TRON" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			repositoryURL = "https://github.com/MLSDev/TRON";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.5.0;
+				minimumVersion = 5.3.0;
+			};
+		};
+		AFA2FEF227A3207A000FCB7B /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+		AFA2FEF527A320AB000FCB7B /* XCRemoteSwiftPackageReference "PureLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PureLayout/PureLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AFA0400727A31AC70004E33A /* Alamofire */ = {
+		AFA2FEEE27A3201E000FCB7B /* TRON */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AFA0400627A31AC70004E33A /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
+			package = AFA2FEED27A3201E000FCB7B /* XCRemoteSwiftPackageReference "TRON" */;
+			productName = TRON;
+		};
+		AFA2FEF027A3201E000FCB7B /* TRONSwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA2FEED27A3201E000FCB7B /* XCRemoteSwiftPackageReference "TRON" */;
+			productName = TRONSwiftyJSON;
+		};
+		AFA2FEF327A3207A000FCB7B /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA2FEF227A3207A000FCB7B /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		AFA2FEF627A320AB000FCB7B /* PureLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA2FEF527A320AB000FCB7B /* XCRemoteSwiftPackageReference "PureLayout" */;
+			productName = PureLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

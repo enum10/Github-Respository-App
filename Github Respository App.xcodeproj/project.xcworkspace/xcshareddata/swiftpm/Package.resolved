@@ -9,6 +9,51 @@
           "revision": "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
           "version": "5.5.0"
         }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit",
+        "state": {
+          "branch": null,
+          "revision": "93c8d41ce96ed78f36c3948be396d76f3ca3de1b",
+          "version": "6.16.2"
+        }
+      },
+      {
+        "package": "PureLayout",
+        "repositoryURL": "https://github.com/PureLayout/PureLayout",
+        "state": {
+          "branch": null,
+          "revision": "5561683c96dc49b023c1299bfe4f6fbeed5f8199",
+          "version": "3.1.9"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "b4307ba0b6425c0ba4178e138799946c3da594f8",
+          "version": "6.5.0"
+        }
+      },
+      {
+        "package": "SwiftyJSON",
+        "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
+        "state": {
+          "branch": null,
+          "revision": "b3dcd7dbd0d488e1a7077cb33b00f2083e382f07",
+          "version": "5.0.1"
+        }
+      },
+      {
+        "package": "TRON",
+        "repositoryURL": "https://github.com/MLSDev/TRON",
+        "state": {
+          "branch": null,
+          "revision": "db1529beba9a89461536f40686d7c8b7ccace876",
+          "version": "5.4.1"
+        }
       }
     ]
   },
