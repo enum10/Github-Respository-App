@@ -21,7 +21,7 @@ class GithubQueryComposer {
                         page: Int) -> [String: Any] {
         var result: [String: Any] = [
             queryKey: query,
-            perPageKey: 1,
+            perPageKey: 10,
             pageKey: page
         ]
         

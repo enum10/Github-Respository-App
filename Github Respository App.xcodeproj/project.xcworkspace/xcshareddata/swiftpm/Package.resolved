@@ -11,6 +11,24 @@
         }
       },
       {
+        "package": "FontAwesome",
+        "repositoryURL": "https://github.com/thii/FontAwesome.swift",
+        "state": {
+          "branch": null,
+          "revision": "07883a32d49dfc7bdedbeea115067b53dfbeeb43",
+          "version": "1.9.1"
+        }
+      },
+      {
+        "package": "Kingfisher",
+        "repositoryURL": "https://github.com/onevcat/Kingfisher",
+        "state": {
+          "branch": null,
+          "revision": "0c02c46cfdc0656ce74fd0963a75e5000a0b7f23",
+          "version": "7.1.2"
+        }
+      },
+      {
         "package": "PromiseKit",
         "repositoryURL": "https://github.com/mxcl/PromiseKit",
         "state": {

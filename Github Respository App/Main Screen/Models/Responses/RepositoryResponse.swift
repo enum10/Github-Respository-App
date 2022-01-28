@@ -12,18 +12,22 @@ import SwiftyJSON
 struct RepositoryResponse: JSONDecodable {
     
     let name: String
+    let starsCount: Int64
     let watchersCount: Int64
     let forksCount: Int64
     let issuesCount: Int64
-    let ownerName: String
-    let ownerAvatar: String
+    let language: String
+    let description: String
+    let owner: RepositoryOwner
     
     init(json: JSON) throws {
         name = String(json: json["name"])
+        starsCount = Int64(json: json["stargazers_count"])
         watchersCount = Int64(json: json["watchers_count"])
         forksCount = Int64(json: json["forks_count"])
         issuesCount = Int64(json: json["open_issues_count"])
-        ownerName = String(json: json["owner"]["login"])
-        ownerAvatar = String(json: json["owner"]["avatar_url"])
+        language = String(json: json["language"])
+        description = String(json: json["description"])
+        owner = try RepositoryOwner(json: json["owner"])
     }
 }

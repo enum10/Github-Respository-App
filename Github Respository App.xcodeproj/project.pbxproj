@@ -25,6 +25,13 @@
 		AFA2FF0627A32F7F000FCB7B /* GithubQueryComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF0527A32F7F000FCB7B /* GithubQueryComposer.swift */; };
 		AFA2FF0927A34421000FCB7B /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF0827A34421000FCB7B /* GithubService.swift */; };
 		AFA2FF0C27A3448E000FCB7B /* RepositoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF0B27A3448E000FCB7B /* RepositoryResponse.swift */; };
+		AFA2FF0E27A35ABE000FCB7B /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF0D27A35ABE000FCB7B /* RepositoryCell.swift */; };
+		AFA2FF1827A3617E000FCB7B /* FontAwesome in Frameworks */ = {isa = PBXBuildFile; productRef = AFA2FF1727A3617E000FCB7B /* FontAwesome */; };
+		AFA2FF1B27A3644A000FCB7B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AFA2FF1A27A3644A000FCB7B /* Kingfisher */; };
+		AFA2FF2327A37540000FCB7B /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFA2FF2127A37540000FCB7B /* Font Awesome 5 Free-Regular-400.otf */; };
+		AFA2FF2427A37540000FCB7B /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFA2FF2227A37540000FCB7B /* Font Awesome 5 Free-Solid-900.otf */; };
+		AFA2FF2627A3F03E000FCB7B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF2527A3F03E000FCB7B /* UIColor+Extension.swift */; };
+		AFA2FF2827A3FB45000FCB7B /* RepositoryOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF2727A3FB45000FCB7B /* RepositoryOwner.swift */; };
 		AFC42C8B27A3014B00A3B98E /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC42C8A27A3014B00A3B98E /* SearchResultsViewController.swift */; };
 		AFC42C8E27A305F300A3B98E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC42C8D27A305F300A3B98E /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +53,11 @@
 		AFA2FF0527A32F7F000FCB7B /* GithubQueryComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubQueryComposer.swift; sourceTree = "<group>"; };
 		AFA2FF0827A34421000FCB7B /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		AFA2FF0B27A3448E000FCB7B /* RepositoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryResponse.swift; sourceTree = "<group>"; };
+		AFA2FF0D27A35ABE000FCB7B /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		AFA2FF2127A37540000FCB7B /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
+		AFA2FF2227A37540000FCB7B /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		AFA2FF2527A3F03E000FCB7B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		AFA2FF2727A3FB45000FCB7B /* RepositoryOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryOwner.swift; sourceTree = "<group>"; };
 		AFC42C8A27A3014B00A3B98E /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		AFC42C8D27A305F300A3B98E /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,10 +67,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA2FF1B27A3644A000FCB7B /* Kingfisher in Frameworks */,
 				AFA2FEF727A320AB000FCB7B /* PureLayout in Frameworks */,
 				AFA2FEEF27A3201E000FCB7B /* TRON in Frameworks */,
 				AFA2FEF427A3207A000FCB7B /* PromiseKit in Frameworks */,
 				AFA2FEF127A3201E000FCB7B /* TRONSwiftyJSON in Frameworks */,
+				AFA2FF1827A3617E000FCB7B /* FontAwesome in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +133,18 @@
 			isa = PBXGroup;
 			children = (
 				AFA2FF0B27A3448E000FCB7B /* RepositoryResponse.swift */,
+				AFA2FF2727A3FB45000FCB7B /* RepositoryOwner.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		AFA2FF1C27A37435000FCB7B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2FF2127A37540000FCB7B /* Font Awesome 5 Free-Regular-400.otf */,
+				AFA2FF2227A37540000FCB7B /* Font Awesome 5 Free-Solid-900.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		AFC42C8327A2FFC700A3B98E /* Models */ = {
@@ -151,6 +175,7 @@
 		AFC42C8627A3000800A3B98E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFA2FF1C27A37435000FCB7B /* Fonts */,
 				AF59B01A27A2FD5600890BD9 /* Assets.xcassets */,
 				AF59B01C27A2FD5600890BD9 /* LaunchScreen.storyboard */,
 				AF59B01F27A2FD5600890BD9 /* Info.plist */,
@@ -171,6 +196,7 @@
 		AFC42C8827A300BA00A3B98E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				AFA2FF0D27A35ABE000FCB7B /* RepositoryCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -189,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				AFC42C8D27A305F300A3B98E /* CustomNavigationController.swift */,
+				AFA2FF2527A3F03E000FCB7B /* UIColor+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -214,6 +241,8 @@
 				AFA2FEF027A3201E000FCB7B /* TRONSwiftyJSON */,
 				AFA2FEF327A3207A000FCB7B /* PromiseKit */,
 				AFA2FEF627A320AB000FCB7B /* PureLayout */,
+				AFA2FF1727A3617E000FCB7B /* FontAwesome */,
+				AFA2FF1A27A3644A000FCB7B /* Kingfisher */,
 			);
 			productName = "Github Respository App";
 			productReference = AF59B00E27A2FD5400890BD9 /* Github Respository App.app */;
@@ -247,6 +276,8 @@
 				AFA2FEED27A3201E000FCB7B /* XCRemoteSwiftPackageReference "TRON" */,
 				AFA2FEF227A3207A000FCB7B /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				AFA2FEF527A320AB000FCB7B /* XCRemoteSwiftPackageReference "PureLayout" */,
+				AFA2FF1627A3617E000FCB7B /* XCRemoteSwiftPackageReference "FontAwesome" */,
+				AFA2FF1927A3644A000FCB7B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = AF59B00F27A2FD5400890BD9 /* Products */;
 			projectDirPath = "";
@@ -263,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF59B01E27A2FD5600890BD9 /* LaunchScreen.storyboard in Resources */,
+				AFA2FF2327A37540000FCB7B /* Font Awesome 5 Free-Regular-400.otf in Resources */,
 				AF59B01B27A2FD5600890BD9 /* Assets.xcassets in Resources */,
+				AFA2FF2427A37540000FCB7B /* Font Awesome 5 Free-Solid-900.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA2FF0E27A35ABE000FCB7B /* RepositoryCell.swift in Sources */,
 				AF59B01627A2FD5400890BD9 /* MainViewController.swift in Sources */,
 				AFA2FF0927A34421000FCB7B /* GithubService.swift in Sources */,
 				AFA2FF0227A327A7000FCB7B /* SearchSort.swift in Sources */,
 				AFC42C8B27A3014B00A3B98E /* SearchResultsViewController.swift in Sources */,
+				AFA2FF2827A3FB45000FCB7B /* RepositoryOwner.swift in Sources */,
 				AFA2FEFE27A321C0000FCB7B /* JSONDecodableError.swift in Sources */,
 				AF59B01227A2FD5400890BD9 /* AppDelegate.swift in Sources */,
+				AFA2FF2627A3F03E000FCB7B /* UIColor+Extension.swift in Sources */,
 				AFC42C8E27A305F300A3B98E /* CustomNavigationController.swift in Sources */,
 				AFA2FF0627A32F7F000FCB7B /* GithubQueryComposer.swift in Sources */,
 				AFA2FF0027A323D9000FCB7B /* Service.swift in Sources */,
@@ -527,6 +563,22 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		AFA2FF1627A3617E000FCB7B /* XCRemoteSwiftPackageReference "FontAwesome" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/thii/FontAwesome.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		AFA2FF1927A3644A000FCB7B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -549,6 +601,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AFA2FEF527A320AB000FCB7B /* XCRemoteSwiftPackageReference "PureLayout" */;
 			productName = PureLayout;
+		};
+		AFA2FF1727A3617E000FCB7B /* FontAwesome */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA2FF1627A3617E000FCB7B /* XCRemoteSwiftPackageReference "FontAwesome" */;
+			productName = FontAwesome;
+		};
+		AFA2FF1A27A3644A000FCB7B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFA2FF1927A3644A000FCB7B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
