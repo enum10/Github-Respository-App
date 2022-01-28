@@ -124,7 +124,8 @@ extension MainViewController: RepositoryCellDelegate {
         }
         
         let repository = topiOSRepositories[indexPath.row]
-        print(repository.name)
+        let detailsViewController = RepositoryDetailsViewController(repository: repository)
+        navigationController?.pushViewController(detailsViewController, animated: true)
     }
     
     func repositoryCellOwnerSectionClicked(_ cell: RepositoryCell) {

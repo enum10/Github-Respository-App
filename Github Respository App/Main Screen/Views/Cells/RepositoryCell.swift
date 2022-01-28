@@ -10,7 +10,7 @@ import PureLayout
 import FontAwesome
 import Kingfisher
 
-protocol RepositoryCellDelegate: class {
+protocol RepositoryCellDelegate: AnyObject {
     func repositoryCellRepoSectionClicked(_ cell: RepositoryCell)
     func repositoryCellOwnerSectionClicked(_ cell: RepositoryCell)
 }

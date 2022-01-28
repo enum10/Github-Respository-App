@@ -32,6 +32,8 @@
 		AFA2FF2427A37540000FCB7B /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = AFA2FF2227A37540000FCB7B /* Font Awesome 5 Free-Solid-900.otf */; };
 		AFA2FF2627A3F03E000FCB7B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF2527A3F03E000FCB7B /* UIColor+Extension.swift */; };
 		AFA2FF2827A3FB45000FCB7B /* RepositoryOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF2727A3FB45000FCB7B /* RepositoryOwner.swift */; };
+		AFA2FF2C27A3FD86000FCB7B /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF2B27A3FD86000FCB7B /* RepositoryDetailsViewController.swift */; };
+		AFA2FF2E27A403E7000FCB7B /* License.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA2FF2D27A403E7000FCB7B /* License.swift */; };
 		AFC42C8B27A3014B00A3B98E /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC42C8A27A3014B00A3B98E /* SearchResultsViewController.swift */; };
 		AFC42C8E27A305F300A3B98E /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC42C8D27A305F300A3B98E /* CustomNavigationController.swift */; };
 /* End PBXBuildFile section */
@@ -58,6 +60,8 @@
 		AFA2FF2227A37540000FCB7B /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
 		AFA2FF2527A3F03E000FCB7B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		AFA2FF2727A3FB45000FCB7B /* RepositoryOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryOwner.swift; sourceTree = "<group>"; };
+		AFA2FF2B27A3FD86000FCB7B /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
+		AFA2FF2D27A403E7000FCB7B /* License.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = License.swift; sourceTree = "<group>"; };
 		AFC42C8A27A3014B00A3B98E /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		AFC42C8D27A305F300A3B98E /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +102,7 @@
 		AF59B01027A2FD5400890BD9 /* Github Respository App */ = {
 			isa = PBXGroup;
 			children = (
+				AFA2FF2927A3FD65000FCB7B /* RepositoryDetailsScreen */,
 				AF59B01127A2FD5400890BD9 /* AppDelegate.swift */,
 				AF59B01327A2FD5400890BD9 /* SceneDelegate.swift */,
 				AFC42C8927A3011300A3B98E /* Main Screen */,
@@ -134,6 +139,7 @@
 			children = (
 				AFA2FF0B27A3448E000FCB7B /* RepositoryResponse.swift */,
 				AFA2FF2727A3FB45000FCB7B /* RepositoryOwner.swift */,
+				AFA2FF2D27A403E7000FCB7B /* License.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -145,6 +151,22 @@
 				AFA2FF2227A37540000FCB7B /* Font Awesome 5 Free-Solid-900.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AFA2FF2927A3FD65000FCB7B /* RepositoryDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2FF2A27A3FD77000FCB7B /* Controllers */,
+			);
+			path = RepositoryDetailsScreen;
+			sourceTree = "<group>";
+		};
+		AFA2FF2A27A3FD77000FCB7B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFA2FF2B27A3FD86000FCB7B /* RepositoryDetailsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		AFC42C8327A2FFC700A3B98E /* Models */ = {
@@ -311,6 +333,7 @@
 				AF59B01627A2FD5400890BD9 /* MainViewController.swift in Sources */,
 				AFA2FF0927A34421000FCB7B /* GithubService.swift in Sources */,
 				AFA2FF0227A327A7000FCB7B /* SearchSort.swift in Sources */,
+				AFA2FF2E27A403E7000FCB7B /* License.swift in Sources */,
 				AFC42C8B27A3014B00A3B98E /* SearchResultsViewController.swift in Sources */,
 				AFA2FF2827A3FB45000FCB7B /* RepositoryOwner.swift in Sources */,
 				AFA2FEFE27A321C0000FCB7B /* JSONDecodableError.swift in Sources */,
@@ -318,6 +341,7 @@
 				AFA2FF2627A3F03E000FCB7B /* UIColor+Extension.swift in Sources */,
 				AFC42C8E27A305F300A3B98E /* CustomNavigationController.swift in Sources */,
 				AFA2FF0627A32F7F000FCB7B /* GithubQueryComposer.swift in Sources */,
+				AFA2FF2C27A3FD86000FCB7B /* RepositoryDetailsViewController.swift in Sources */,
 				AFA2FF0027A323D9000FCB7B /* Service.swift in Sources */,
 				AFA2FF0427A3280E000FCB7B /* SearchOrder.swift in Sources */,
 				AFA2FF0C27A3448E000FCB7B /* RepositoryResponse.swift in Sources */,
